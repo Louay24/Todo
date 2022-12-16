@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="todo.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="body">
+    <header class="header darkHeader">
+    </header>
+    <article class="article">
+      <div class="article__top">
+        <h2 class="article__top--title">TODO</h2>
+        <img src="icon-sun.svg" class="article__top--modechanger" alt="" />
+      </div>
+      <div class="article__center">
+        <span class="article__center--checkBox"> </span>
+        <input
+          id="todo-input"
+          class="article__center--input"
+          type="text"
+          alt="create a new todo"
+          placeholder="Create a new todo..."
+        />
+        <button id="add-button">
+          <img src="images/plus.svg" class="article__center--input0" />
+        </button>
+      </div>
+      <div class="article__bottom">
+        <div class="article__bottom--cont1" id="container"></div>
+        <div class="article__bottom--sort">
+          <p class="sort leftitems">0 items left</p>
+          <div class="actions">
+            <button class="sort all btn">All</button>
+            <button class="sort active btn">Active</button>
+            <button class="sort completed btn">Completed</button>
+          </div>
+          <button class="sort clearcompleted btn">Clear completed</button>
+        </div>
+      </div>
+      <p class="draganddrop">Drag and drop to reoder list</p>
+    </article>
+    <script src="todo.js"></script>
+  </body>
+</html>
